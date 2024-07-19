@@ -6,7 +6,7 @@ import { Model as Invader } from '@/app/invader';
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 
-import { Canvas } from '@react-three/fiber/'
+import { Canvas } from '@react-three/fiber';
 import { Html, OrthographicCamera, useProgress } from '@react-three/drei';
 
 export default function Home() {
@@ -72,7 +72,7 @@ export default function Home() {
   }
 
   return (
-    <main className='bg-black text-primary w-screen min-h-[600px] h-screen flex justify-center items-center relative font-logo'>
+    <main className='bg-black text-primary w-full min-h-[600px] h-screen flex justify-center items-center relative font-logo'>
 
       <div className='absolute left-0 top-0 w-full h-full flex justify-center items-center overflow-hidden'>
         <div className={`relative ${screenWidth != 0 ? screenWidth > screenHeight ? "w-full" : "h-full" : "hidden"} aspect-square`}>
