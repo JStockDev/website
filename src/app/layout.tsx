@@ -1,6 +1,7 @@
 import { Silkscreen, Inter } from 'next/font/google'
 import Script from 'next/script';
 import { Metadata } from 'next';
+import PlausibleProvider from 'next-plausible'
 
 import icon from '#/icon.png'
 
@@ -25,7 +26,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${silkscreen.variable} ${inter.variable}`}>{children}</body>
+
+      <body className={`${silkscreen.variable} ${inter.variable}`}>
+        <PlausibleProvider domain="jstock.dev">
+          {children}
+        </PlausibleProvider>
+      </body>
     </html>
   )
 }
