@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
 
       <body className={`${silkscreen.variable} ${inter.variable}`}>
-        <PlausibleProvider domain="jstock.dev" customDomain="https://plausible.jstock.dev/js/script.js" selfHosted>
+        <PlausibleProvider domain="jstock.dev" customDomain="https://plausible.jstock.dev" selfHosted>
           {children}
         </PlausibleProvider>
       </body>
